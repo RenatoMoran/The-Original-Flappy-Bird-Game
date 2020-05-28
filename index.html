@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Teko:700"
+      rel="stylesheet"
+    />
+    <title>Flappy Bird</title>
+    <style>
+      canvas {
+        border: 1px solid #000;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .naoSelecionavel {
+        -webkit-touch-callout: none; /* iPhone OS, Safari */
+        -webkit-user-select: none; /* Chrome, Safari 3 */
+        -khtml-user-select: none; /* Safari 2 */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+ */
+        user-select: none; /* Possível implementação no futuro */
+        /* cursor: default; */
+      }
+
+      div {
+        color: #ffc312;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="bird" width="320" height="480"></canvas>
+    <footer>
+      <div>
+        <h2 class="naoSelecionavel" unselectable="on">Dev: Renato Moran</h2>
+      </div>
+    </footer>
+    <script src="game.js"></script>
+  </body>
+</html>
